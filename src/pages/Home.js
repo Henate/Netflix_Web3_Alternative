@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import { Logo } from '../images/Netflix'
 import { ConnectButton, Tab, TabList, Button,Icon, Modal, useNotification} from 'web3uikit';
-import { Bell, Btc , Avax, Eth} from '@web3uikit/icons'
 import { movies } from '../helpers/library';
 import { useMoralis } from "react-moralis";
 
@@ -38,8 +37,7 @@ const Home = () => {
       <Logo/>
     </div>
     <div className='connect'>
-      <Icon fill="#ffffff" size={24} svg="bell" />
-      <Btc fontSize='35px'/>     
+      <Icon fill="#ffffff" size={24} svg="bell" />  
       <ConnectButton />
     </div>
     <div className="topBanner">
